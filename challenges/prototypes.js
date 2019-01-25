@@ -11,7 +11,6 @@
 // Create another method using CuboidMaker's prototype that returns the surface area of a given cuboid's length, width, and height. 
 // Formula for cuboid surface area of a cube: 2 * (length * width + length * height + width * height)
 
-// CharacterStats.prototype = Object.create(CuboidMaker.prototype);
 function CuboidMaker(attributes) {
   this.length = attributes.length;
   this.width = attributes.width;
