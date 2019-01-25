@@ -28,15 +28,41 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
-1. Describe the biggest difference between `.forEach` & `.map`.
+[ ] Describe the biggest difference between `.forEach` & `.map`.
 
-2. What is the difference between a function and a method?
+.forEach and .map both iterate over an array and run a function at each index. forEach will mutate the original array. map will create a new array with the results of the function.
 
-3. What is closure?
+---
 
-4. Describe the four rules of the 'this' keyword.
+[ ] What is the difference between a function and a method?
 
-5. Why do we need super() in an extended class?
+A function and a method are both functions. The difference is where they reside. A function is an object. A method is a function that is a property of an object.
+
+---
+
+[ ] What is closure?
+
+Closure is the binding which defines the scope of execution. It's what allows a child to access a parent functions variable, parameters, etc, but not the other way around. 
+
+---
+
+[ ] Describe the four rules of the 'this' keyword.
+
+Window, or Global, binding of 'this' is 'window' in browser or 'global/console' in node. With 'use strict' enabled, the value would be undefined.
+
+Implicit binding means 'this' is relevant in context to it's invocation. Meaning, 'this' points to the object on which the function is invoked.
+
+New binding. The ability to create a new instance of an object. Used when creating an object from constructor function.
+
+Explicit binding is explicitly setting the context of 'this' using call, bind, or apply.
+
+---
+
+[ ] Why do we need super() in an extended class?
+
+super() provides access to the parent objects attributes through the use of 'this'. It's like a context abassador. It's the 'secret sauce' of 'class structure', as Josh Knell calls it.
+
+---
 
 ## Project Set up
 

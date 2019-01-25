@@ -19,11 +19,11 @@ consume('string', 'string again', callback);
   * Create a function named multiply that returns the product of two numbers 
   * Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
 Step 3: Check your work by un-commenting the following calls to consume(): */
-const add = (paramOne, paramTwo) => { console.log(paramOne + paramTwo) };
+const add = (paramOne, paramTwo) => paramOne + paramTwo;
 const multiply = (paramOne, paramTwo) => { console.log(paramOne * paramTwo) };
 const greeting = (paramOne, paramTwo) => { console.log(`Hello ${paramOne} ${paramTwo}, nice to meet you!`) };
-consume(2,2,add); // 4
-consume(10,16,multiply); // 160
+console.log(consume(2,2,add)); 
+consume(10,16,multiply); 
 consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
 
 
